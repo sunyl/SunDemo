@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button_no_camera).setOnClickListener(this);
         findViewById(R.id.button_one_photo).setOnClickListener(this);
         findViewById(R.id.button_photo_gif).setOnClickListener(this);
-        findViewById(R.id.button_multiple_picked).setOnClickListener(this);
         findViewById(R.id.button_photodraweeview).setOnClickListener(this);
+        findViewById(R.id.bubbleview).setOnClickListener(this);
        /* recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(this, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
@@ -133,19 +133,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .start(this);
                 break;
             }
-
-            case R.id.button_multiple_picked: {
-                PhotoPicker.builder()
-                        .setPhotoCount(9)
-                        .setShowCamera(true)
-                        .setGridColumnCount(4)
-                        .setSelected(selectedPhotos)
-                        .start(this);
-                break;
-            }
             case R.id.button_photodraweeview:
                 Intent intent = new Intent(MainActivity.this, PhotoDraweeviewActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.bubbleview:
+                Intent intent2 = new Intent(MainActivity.this, BubbleViewActivity.class);
+                startActivity(intent2);
                 break;
         }
 
