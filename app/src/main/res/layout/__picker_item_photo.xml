@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<photopicker.widget.SquareItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/__picker_photo_bg"
+        android:padding="1dip"
+        android:scaleType="centerCrop"
+        fresco:failureImage="@drawable/__picker_ic_broken_image_black_48dp"
+        fresco:failureImageScaleType="fitCenter"
+        fresco:placeholderImage="@drawable/__picker_ic_photo_black_48dp"
+        fresco:placeholderImageScaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/v_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:paddingBottom="20dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:src="@drawable/__picker_checkbox_bg" />
+
+</photopicker.widget.SquareItemLayout>

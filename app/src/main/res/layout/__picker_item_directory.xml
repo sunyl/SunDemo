@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:background="@drawable/__picker_bg_material_item"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_dir_cover"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_marginRight="10dip"
+        android:scaleType="centerCrop"
+        fresco:failureImage="@drawable/__picker_ic_broken_image_black_48dp"
+        fresco:failureImageScaleType="fitCenter"
+        fresco:placeholderImage="@drawable/__picker_ic_photo_black_48dp"
+        fresco:placeholderImageScaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dir_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/__picker_text_40" />
+
+        <TextView
+            android:id="@+id/tv_dir_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/__picker_text_80" />
+
+    </LinearLayout>
+</LinearLayout>

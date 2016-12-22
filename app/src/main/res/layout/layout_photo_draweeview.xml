@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <photodraweeview.PhotoDraweeView
+        android:id="@+id/photo_drawee_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:failureImage="@drawable/ic_error"
+        fresco:failureImageScaleType="centerInside"
+        fresco:placeholderImage="@drawable/ic_placeholder"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:progressBarAutoRotateInterval="1000"
+        fresco:progressBarImage="@drawable/ic_loading"
+        fresco:progressBarImageScaleType="centerInside" />
+
+</RelativeLayout>
